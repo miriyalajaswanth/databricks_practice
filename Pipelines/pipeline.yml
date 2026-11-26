@@ -1,0 +1,12 @@
+resources:
+  jobs:
+    Fifa_test_bronze_pipeline:
+      name: Fifa test bronze pipeline
+      tasks:
+        - task_key: ingest_fifa_csv
+          notebook_task:
+            notebook_path: /Workspace/Users/jaswanthkrishna03@gmail.com/Fifa Practice notebook
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
